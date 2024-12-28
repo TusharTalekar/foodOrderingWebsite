@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Navbar  */
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    display: block;
+    background-color: black;
+}
+
+#logo img {
+    height: 10vh;
+    filter: invert(100%);
+}
+
+#navbar ul {
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.item {
+    list-style: none;
+    /* margin: 10%; */
+    font-size: 1.2rem;
+}
+
+.item a {
+    color: white;
+    display: block;
+    padding: .5rem 1.5rem;
+    border-radius: 1.7rem;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+
+.item :hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Home */
+#home {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    /* border: 1px solid red; */
+}
+
+#home::before {
+    content: "";
+    background: url("/bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 25rem;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+    top: 0;
+    left: 0;
+}
+
+#home p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .1rem;
+}
+
+
+
+
+/* Services */
+#services {
+    padding: 2rem;
+}
+
+.cardBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.card img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.card p {
+    text-align: center;
+    padding: .2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1.2rem;
+    border: 2px solid rgb(245, 98, 98);
+    border-radius: 1.5rem;
+    background-color: rgb(241 241 255);
+}
+
+
+
+/* Cleints */
+#clients {
+    padding: 2rem 1rem;
+}
+
+.clientLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    /* flex-wrap: wrap; */
+}
+
+#clients::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255 228 228);
+    width: 100%;
+    height: 20rem;
+    left: 0;
+    z-index: -1;
+    opacity: .8;
+}
+
+.clientLogo img {
+    height: 12rem;
+    width: 12rem;
+}
+
+
+
+/* Contact */
+#contact {
+    padding: 2rem 1rem;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.formBox form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+
+.form-group form {
+    font-size: 5rem;
+    /* width: 33%; */
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 40vw;
+    /* height: 1.2rem; */
+    padding: 2px;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: .5rem;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: url("/bgContact.jpg") no-repeat center center/cover;
+    /* margin: auto; */
+    z-index: -1;
+    opacity: .8;
+    left: 0;
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+/* Utility class  */
+.h-primary {
+    font-size: 2.5rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: .5rem;
+    text-align: center;
+    
+}
+.btn {
+    width: 10rem;
+    color: white;
+    margin: 10px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .7rem;
+    background-color: rgb(203, 85, 85);
+    border: 2px solid white;
+}
+.btn:hover {
+    font-weight: bold;
+}

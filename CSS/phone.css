@@ -1,0 +1,54 @@
+@media screen and (max-width:500px) {
+    #navbar{
+        flex-direction: column;
+    }
+}
+
+.cardBox{
+    flex-direction: column;
+}
+
+
+.clientLogo{
+    flex-wrap: wrap;
+}
+.clientLogo img{
+    height: 9rem;
+    width: 9rem;
+}
+
+@media screen and (max-width:400px){
+    .clientLogo img{
+        height: 5rem;
+        width: 5rem;
+    }
+}
+@media screen and (max-width:830px){
+    .clientLogo img{
+        height: 7rem;
+        width: 7rem;
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    .form-group input,
+    .form-group textarea {
+        width: 80vw;
+    }
+}
+
+
+#contact{
+    margin:5rem
+}
+@media screen and (max-height:700px){
+    #contact{
+        margin: 0;
+    }
+}
+
+
+
+
