@@ -1,0 +1,69 @@
+/* navbar */
+@media screen and (max-width:600px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .item {
+        font-size: .9rem
+    }
+
+    .item a {
+        padding: .5rem 1.5rem;
+        border-radius: 1.5rem;
+    }
+    #logo img {
+        height: 9vh;
+    }
+
+}
+
+
+/* home */
+
+
+/* services */
+@media screen and (max-width:800px) {
+    .cardBox {
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:500px) {
+    .cardBox {
+        padding: 0;
+    }
+    #services{
+        padding: 0;
+    }
+
+}
+
+
+
+
+/* clients */
+.clientLogo img {
+    height: 7rem;
+    width: 7rem;
+}
+
+.clientLogo {
+    flex-wrap: wrap;
+}
+
+
+
+/* contact */
+
+@media screen and (max-width:900px) {
+
+    .form-group input,
+    .form-group textarea {
+        width: 80vw;
+    }
+
+}
