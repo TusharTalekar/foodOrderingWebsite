@@ -33,5 +33,4 @@ It’s designed to work seamlessly across various screen sizes.
 
 ---
 
-## 📂 File Structure
 
